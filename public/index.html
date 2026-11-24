@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Dock Notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Dock Notes</h1>
+    <p class="lede">What the harbour needs to know right now.</p>
+
+    <form id="note-form">
+      <label for="text">Post a note</label>
+      <div class="row">
+        <input id="text" name="text" maxlength="200" placeholder="Berth 4 is free from 3pm" autocomplete="off" required>
+        <button type="submit">Post note</button>
+      </div>
+      <p id="error" role="alert"></p>
+    </form>
+
+    <ul id="notes" aria-live="polite"></ul>
+    <p id="empty" hidden>No notes yet. Post the first one.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
